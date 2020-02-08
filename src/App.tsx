@@ -3,22 +3,18 @@ import logo from './logo.svg';
 import './App.css';
 
 const App = () => {
+  let contentContainerRef = React.useRef<HTMLElement | null>(null)
+  let resultContainerRef = React.useRef<HTMLElement | null>(null)
+
+  const [images, setImages] = React.useState([])
+  const [activeImage, setActiveImage] = React.useState('')
+  const [textTop, setTextTop] = React.useState('')
+  const [textBottom, setTextBottom] = React.useState('')
+  const [isMemeGenerated, setIsMemeGenerated] = React.useState(false)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Here it begins</h1>
     </div>
   );
 }
