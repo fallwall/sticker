@@ -94,11 +94,11 @@ h2 {
 
 /* Buttons */
 .btn-primary {
-  background: #0984e3;
+  background: grey;
  
 }
 .btn-primary:hover {
-  background: #0767b2;
+  background: grey;
 
 }
 .btn-danger {
